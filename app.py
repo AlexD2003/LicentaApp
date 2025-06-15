@@ -19,7 +19,7 @@ model.classifier = nn.Sequential(
     nn.Dropout(0.4),
     nn.Linear(model.classifier[1].in_features, 2)
 )
-model.load_state_dict(torch.load(MODEL_PATH, map_location="cpu"))
+model.load_state_dict(torch.load(MODEL_PATH, map_location="cpu", weights_only=False))
 model.eval()
 
 app.config["UPLOAD_FOLDER"] = "static/uploads"
