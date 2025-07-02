@@ -1,7 +1,15 @@
 # Bachelors Degree App Final
+
+Ioan si windows:
+```
+pip install -r requirements.txt
+```
+
+
 Running guide:
 
 ```
+python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 python3 app.py
